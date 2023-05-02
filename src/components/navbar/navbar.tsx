@@ -1,11 +1,14 @@
+import NavbarMobile from "./NavbarMobile";
 
 
-const navbar = () => {
+
+
+const Navbar = () => {
   return (
     <div>
-      
+      <NavbarMobile />
     </div>
   )
 }
 
-export default navbar;
+export default Navbar;

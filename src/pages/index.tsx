@@ -1,7 +1,9 @@
+import Navbar from "@/components/navbar/navbar";
+
 const Index = () => {
   return (
-    <div className="bg-red-700">
-      <p>hola</p>
+    <div className="">
+      <Navbar />
     </div>
   )
 }

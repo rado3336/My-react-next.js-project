@@ -1,7 +1,7 @@
-const navbarDesktop = () => {
+const NavbarDesktop = () => {
   return (
     <div>navbarDesktop</div>
   )
 }
 
-export default navbarDesktop;
+export default NavbarDesktop;
