@@ -1,13 +1,16 @@
-import NavbarMobile from "./NavbarMobile";
+import { FC } from "react";
+import NavbarMobile, { INavbarLink } from "./NavbarMobile";
 
 
+interface INavbarData {
+  data: INavbarLink[];
+}
 
-
-const Navbar = () => {
+const Navbar: FC<INavbarData> = ({data}) => {
   return (
-    <div>
-      <NavbarMobile />
-    </div>
+    <nav className="fixed w-full font-sourceCode">
+      <NavbarMobile data={data}  />
+    </nav>
   )
 }
 

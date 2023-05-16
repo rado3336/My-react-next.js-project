@@ -1,22 +1,20 @@
-import Link from 'next/link'
+import ArrowIcon from '@/icons/ArrowIcon';
 import React, { FC } from 'react'
 
-export interface INavbarLinkExpand{
+interface INavbarLinkExpand{
     title: string;
-    href: string;
-    subMenu?: ISubMenu[];
+    onClickSubMenu?: () => void; 
+    classNameSvg?: string;    
 }
 
-interface ISubMenu{
-  id: number;
-  title: string;
-  href: string;
-}
 
-const NavbarMobileLink: FC<INavbarLinkExpand> = ({title, href}) => {
+const NavbarLinkExpand: FC<INavbarLinkExpand> = ({title, classNameSvg, onClickSubMenu}) => {
   return (
-    <Link href={href}>{title}</Link>
+      <div className='flex justify-center items-center gap-1 group cursor-pointer ' onClick={onClickSubMenu}>
+        <p className='group-hover:text-navbar-hover-color '>{title}</p>
+        <ArrowIcon classNameSvg={classNameSvg}  />
+      </div>  
   )
 }
 
-export default NavbarMobileLink;
+export default NavbarLinkExpand;

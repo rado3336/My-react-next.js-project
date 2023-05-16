@@ -8,7 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "navbar-color": "#3c2a4d",
+        "navbar-color": "#3a4457",
+        "navbar-mobile-menu-color": "#eaf1ff",
+        "navbar-hover-color": "#F21C73",
+      },
+      fontFamily: {
+        sourceCode: "'Source Code Pro', monospace",
       },
     },
   },

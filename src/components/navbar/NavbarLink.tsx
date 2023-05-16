@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { FC } from "react";
 
-export interface INavbarLink{
+interface INavbarLink{
     title: string;
     href: string;
 }
 
 const NavbarLink: FC<INavbarLink> = ({title, href}) => {
   return (
-    <Link href={href}>{title}</Link>
+    <Link href={href} className="hover:text-navbar-hover-color">{title}</Link>
   )
 }
 
